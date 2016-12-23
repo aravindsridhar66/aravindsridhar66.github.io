@@ -15,7 +15,7 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog.php">Blog</a></li>
                     <li><a href="Resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="https://www.linkedin.com/in/aravind-sridhar-622211111?trk=nav_responsive_tab_profile">LinkedIn</a></li>
                 </ul>
@@ -29,7 +29,7 @@
             </p> 
         </div>
     <div align="center">
-        <form  method="POST"action="<?php echo htmlspecialchars(submit_email.php);?>">
+        <form  method="POST" action="<?php echo htmlspecialchars($_SERVER["submit_email.php"]);?>">
             <font color="wheat" size="4"> Get email alerts when I have a new post! Add your email here: </font><br>
             <input type="text" name="email"> <br>
             <input type="submit" value="Submit">
